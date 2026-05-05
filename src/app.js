@@ -6,7 +6,7 @@ const server = http.createServer((request, response) => {
     if (request.method === "GET" && request.url === "/users") {
         try {
             const data = getUsers();
-            // 🔧 Правильная установка статуса и заголовков
+            // Правильная установка статуса и заголовков
             response.statusCode = 200;
             response.setHeader(
                 "Content-Type",
